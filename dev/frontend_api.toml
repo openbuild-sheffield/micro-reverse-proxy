@@ -1,0 +1,15 @@
+[frontends.api]
+    entryPoints = ["http"]
+    backend = "api"
+    [frontends.api.routes.test_host]
+        rule = "Host:dev.local"
+    [frontends.api.routes.test_api]
+        rule = "PathPrefix:/api"
+
+[frontends.api_bundles]
+    entryPoints = ["http"]
+    backend = "api"
+    [frontends.api_bundles.routes.test_host]
+        rule = "Host:dev.local"
+    [frontends.api_bundles.routes.test_bundles]
+        rule = "PathPrefix:/bundles"

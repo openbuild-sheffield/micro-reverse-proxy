@@ -1,0 +1,4 @@
+[backends.react_ssr]
+    [backends.react_ssr.servers]
+        [backends.react_ssr.servers.server0]
+            url = "http://127.0.0.1:3001"

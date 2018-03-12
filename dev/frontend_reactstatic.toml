@@ -1,0 +1,7 @@
+[frontends.reactstatic]
+    entryPoints = ["http"]
+    backend = "react"
+    [frontends.reactstatic.routes.test_host]
+        rule = "Host:dev.local"
+    [frontends.reactstatic.routes.test_static]
+        rule = "PathPrefix:/static"

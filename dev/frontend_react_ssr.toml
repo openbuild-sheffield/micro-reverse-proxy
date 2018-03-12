@@ -1,0 +1,5 @@
+[frontends.react_ssr]
+    entryPoints = ["http"]
+    backend = "react_ssr"
+    [frontends.react_ssr.routes.test_host]
+        rule = "Host:dev.local"

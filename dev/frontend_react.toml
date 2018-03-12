@@ -1,0 +1,7 @@
+[frontends.react]
+    entryPoints = ["http"]
+    backend = "react"
+    [frontends.react.routes.test_host]
+        rule = "Host:dev.local"
+    [frontends.react.routes.test_generic]
+        rule = "Path:/manifest.json,/favicon.ico,/index.html,/static/js/bundle.js"

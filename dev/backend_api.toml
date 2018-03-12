@@ -1,0 +1,4 @@
+[backends.api]
+    [backends.api.servers]
+        [backends.api.servers.server0]
+            url = "http://127.0.0.1:8000"

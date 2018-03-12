@@ -1,0 +1,7 @@
+[frontends.reactnode]
+    entryPoints = ["http"]
+    backend = "react"
+    [frontends.reactnode.routes.test_host]
+        rule = "Host:dev.local"
+    [frontends.reactnode.routes.test_socketjs]
+        rule = "PathPrefix:/sockjs-node"
